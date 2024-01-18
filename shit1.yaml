@@ -1,0 +1,85 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: 0.0.0.0:9090
+proxies:
+ US - type: ss
+    name: github.com/freefq-美国5
+    server: 165.232.91.222
+    port: 4432
+    password: Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpQTVNVVHNNRGczN2JyemZhaHpxbmxS
+    cipher: aes-128-gcm
+  - type: vmess
+    name: github.com/freefq-美国CloudFlare公司CDN节点66
+    ws-opts:
+      path: /
+      headers:
+        host: 1.catnipballs.gay
+    server: 104.17.25.1
+    port: 80
+    uuid: d87339e4-d57d-4475-ef76-a78205daa90e
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: github.com/freefq-新加坡Choopa数据中心88
+    ws-opts:
+      path: /alexdevill
+      headers:
+        host: m.zoom.us
+    server: 45.77.240.25
+    port: 10067
+    uuid: 0a230213-edf7-44c0-9900-36bc7404d208
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: github.com/freefq-美国CloudFlare公司CDN节点99
+    ws-opts:
+      path: /
+      headers:
+        host: vvv2vayo2.everythingisreve.shop
+    server: glaSco.fx-trAder.shop
+    port: 80
+    uuid: cdbb0899-7113-4d4e-f868-31339c75ad3c
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: github.com/freefq-美国CloudFlare公司CDN节点1010
+    ws-opts:
+      path: /
+      headers:
+        host: v3ra3do.wakeuptimerap.shop
+    server: glasco.fx-trader.shop
+    port: 80
+    uuid: f256a3ae-0f85-4a1d-d0cd-2d0b4b73f4f1
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: vmess
+    name: github.com/freefq-乌克兰1111
+    ws-opts:
+      path: /vmess
+      headers:
+        host: cz1-vmess.sshmax.xyz
+    server: cz1-vmess.sshmax.xyz
+    port: 80
+    uuid: ef7cfdf6-63e1-4307-bb61-40eb81acb5bd
+    alterId: 0
+    cipher: auto
+    network: ws
+  - type: ss
+    name: 🇯🇵_JP_日本
+    server: 43.207.88.83
+    port: 443
+    password: YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU
+    cipher: aes-128-gcm
+  - type: ss
+    name: 🇸🇬_SG_新加坡
+    server: 13.250.46.178
+    port: 443
+    password: YWVzLTI1Ni1jZmI6YW1hem9uc2tyMDU
+    cipher: aes-128-gcm
