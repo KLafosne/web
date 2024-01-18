@@ -1,18 +1,25 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: fldh
 
-# Controls when the workflow will run
+# # Controls when the workflow will run
+# on:
+#   # Triggers the workflow on push or pull request events but only for the "main" branch
+#   push:
+#     branches: [ "main" ]
+#   pull_request:
+#     branches: [ "main" ]
+
+#   # Allows you to run this workflow manually from the Actions tab
+#   workflow_dispatch:
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
+  # push:
+  #   branches:
+  #     - main  # 替换为你的默认分支
+  schedule:
+    - cron: '0 0,3,13 * * *'  # 每6h一次
+  workflow_dispatch:  # 触发手动事件
+  
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
