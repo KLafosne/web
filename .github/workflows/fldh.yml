@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: fldh
+name: ppg
 
 # # Controls when the workflow will run
 # on:
@@ -35,7 +35,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: |
-          wget https://proxy.fldhhhhhh.top/clash/proxies?speed=15,30
+          wget https://fku-ppg.co.uk/
           rm -rf shit1.yaml
           mv proxies?speed=15,30 shit1.yaml
 
