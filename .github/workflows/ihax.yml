@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: crazy
+name: ihax
 
 # # Controls when the workflow will run
 # on:
@@ -35,10 +35,8 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: |
-          wget https://proxy.crazygeeky.com/clash/proxies?speed=15,30
           rm -rf shit2.yaml
-          mv proxies?speed=15,30 shit2.yaml
-
+          wget https://ihax.cf/api/v1/client/subscribe?token=9e5c6a0dc44eef63f09dbb602a8471b1 -O shit2.yaml
       - name: Commit Changes
         run: |
           if [[ -n "$(git status --porcelain)" ]]; then
