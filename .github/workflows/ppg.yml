@@ -36,9 +36,7 @@ jobs:
       - name: Run a one-line script
         run: |
           wget https://fku-ppg.co.uk/
-          rm -rf shit1.yaml
-          mv proxies?speed=15,30 shit1.yaml
-
+    
       - name: Commit Changes
         run: |
           if [[ -n "$(git status --porcelain)" ]]; then
