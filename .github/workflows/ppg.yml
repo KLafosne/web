@@ -36,7 +36,8 @@ jobs:
       - name: Run a one-line script
         run: |
           wget https://fku-ppg.co.uk/
-    
+          rm -rf index.html
+          mv index.html shit2.yaml
       - name: Commit Changes
         run: |
           if [[ -n "$(git status --porcelain)" ]]; then
