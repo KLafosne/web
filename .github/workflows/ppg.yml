@@ -36,7 +36,7 @@ jobs:
       - name: Run a one-line script
         run: |
           wget https://fku-ppg.co.uk/
-          rm -rf index.html shit2.yaml
+          rm -rf shit2.yaml
           mv index.html shit2.yaml
       - name: Commit Changes
         run: |
