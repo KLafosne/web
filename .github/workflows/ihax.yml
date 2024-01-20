@@ -36,7 +36,7 @@ jobs:
       - name: Run a one-line script
         run: |
           rm -rf shit2.yaml
-          wget https://ihax.cf/api/v1/client/subscribe?token=9e5c6a0dc44eef63f09dbb602a8471b1 -O shit2.yaml
+          wget https://raw.githubusercontent.com/aiboboxx/clashfree/main/clash.yml -O shit2.yaml
       - name: Commit Changes
         run: |
           if [[ -n "$(git status --porcelain)" ]]; then
